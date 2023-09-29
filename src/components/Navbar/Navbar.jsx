@@ -14,7 +14,8 @@ function Navbar() {
         </div>
       </NavLink>
       {/* // Lien vers la page d'accueil. */}
-      <NavLink to="/">
+      <NavLink 
+         to="/accueil">
         <div>Accueil</div>
       </NavLink>
       {/* // Lien vers la page "A propos". */}

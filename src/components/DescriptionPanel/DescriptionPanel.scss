@@ -41,9 +41,13 @@ $background-light: #f1f1f1;
 
     // Styles pour le contenu lorsqu'il est visible
     &.visible {
+      text-align: left;
       min-height: 50px;
       padding: 13px 10px;
       max-height: fit-content;
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
 
       // Styles spécifiques pour les appareils avec une largeur d'écran jusqu'à 768px
       @media screen and (width <= 768px) {
