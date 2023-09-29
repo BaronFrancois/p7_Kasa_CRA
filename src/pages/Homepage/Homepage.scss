@@ -25,7 +25,9 @@ body {
     padding: 0;                    // Suppression du padding
   }
 }
-
+.homepage{
+  padding: 0 50px;    
+}
 // Styles pour la bannière de la page d'accueil
 .homepage .banner {
   position: relative;            // Positionnement relatif pour les éléments enfants en position absolute

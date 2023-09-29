@@ -20,11 +20,10 @@ export function useApartment() {
 
     // Requête pour obtenir le fichier db.json.
     fetch("db.json", { signal: abortController.signal })
+    // Recherche de l'appartement correspondant à l'ID donné.
       .then((res) => res.json())
       .then((flats) => {
-        // Recherche de l'appartement correspondant à l'ID donné.
         const flat = flats.find((flat) => flat.id === location.state.apartmentId);
-        
         console.log(flat); // Affichage des informations de l'appartement dans la console.
         setFlat(flat);     // Mise à jour de l'état avec les informations de l'appartement.
       })

@@ -2,7 +2,9 @@
 .about__container {
   padding-inline: 3rem;  // Espacement horizontal
 }
-
+.about{
+  padding: 0 50px;    
+}
 // Styles pour la bannière de la page "À propos".
 .about .banner {
   position: relative;                // Positionnement relatif pour permettre l'utilisation de position: absolute à l'intérieur

@@ -1,7 +1,6 @@
 // Importation des modules nécessaires.
 import React from "react";
 import { Link } from "react-router-dom"; // Pour gérer la navigation entre les pages.
-import Navbar from "../../components/Navbar/Navbar.jsx"; // Importation du composant Navbar.
 import Main from "../../layout/Main/Main.jsx"; // Importation du composant Main.
 import "./ErrorPageNotFound.scss"; // Importation des styles associés.
 
@@ -11,7 +10,7 @@ export function ErrorPageNotFound() {
     // Fragment React pour grouper plusieurs éléments.
     <>
       {/* // Affichage de la barre de navigation. */}
-      <Navbar />
+      {/* <Navbar /> */}
       
       {/* // Conteneur principal. */}
       <Main>

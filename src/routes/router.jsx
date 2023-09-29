@@ -32,10 +32,10 @@ export const router = createBrowserRouter([
         path: "/",                         // Route pour la page d'accueil
         element: <HomePage />
       },
-      {
-        path: "/flat",                     // Route pour la page d'appartement
-        element: <ApartmentPage />
-      },
+      // {
+      //   path: "/flat",                     // Route pour la page d'appartement
+      //   element: <ApartmentPage />
+      // },
       {
         path: "/about",                    // Route pour la page À propos
         element: <About />
