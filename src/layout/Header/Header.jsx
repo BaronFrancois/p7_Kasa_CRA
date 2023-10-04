@@ -1,27 +1,30 @@
 // Importation des modules nécessaires.
-import React from 'react'; 
-import '../../assets/header.css'; // Importation des styles associés.
-import {Link} from 'react-router-dom'; // Pour gérer la navigation entre les pages.
+import React from "react";
+import { NavLink } from "react-router-dom"; // Pour gérer la navigation entre les pages.
+import "./header.scss"; // Importation des styles associés.
 
-// Définition du composant Header.
-const Header = (props) => {
-    return(
-        // Conteneur principal de l'en-tête.
-        <header>
-            {/* // Logo "kasa". */}
-            <div id="logo">kasa</div>
-            
-            {/* // Conteneur pour les liens dans l'en-tête. */}
-            <div id="headerLinksContainer">
-                {/* // Lien vers la page d'accueil. */}
-                <Link to="/">accueil</Link>
-                
-                {/* // Texte "A Propos" (note: cela pourrait aussi être un lien). */}
-                <Link to="/">about</Link>
-            </div>
-        </header>
-    );
+// Définition du composant Navbar.
+function Navbar() {
+  return (
+    <nav className="navbar">
+      {/* // Lien vers la page d'accueil avec le logo. */}
+      <NavLink to="/">
+        <div className="navbar__logo">
+          <img src="logo.png" alt="Logo" />
+        </div>
+      </NavLink>
+      {/* // Lien vers la page d'accueil. */}
+      <NavLink 
+         to="/accueil">
+        <div>Accueil</div>
+      </NavLink>
+      {/* // Lien vers la page "A propos". */}
+      <NavLink to="/about">
+        <div>A propos</div>
+      </NavLink>
+    </nav>
+  );
 }
 
 // Exportation du composant pour une utilisation externe.
-export default Header;
+export default Navbar;

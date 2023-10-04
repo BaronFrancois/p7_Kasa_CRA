@@ -4,15 +4,13 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import About from "./pages/About/About";
 import Home from "./pages/Homepage/Homepage";
 import NoPage from "./pages/ErrorPageNotFound/ErrorPageNotFound";
-import Navbar from './components/Navbar/Navbar';
+import Navbar from './layout/Header/Header';
 import ApartmentPage from './pages/ApartmentPage/ApartmentPage';
 import Footer from './layout/Footer/Footer';
 
 
 function App() {
 
-  // path: "/flat",                     // Route pour la page d'appartement
-  // element: <ApartmentPage />
 
   return (
     <div className="App">

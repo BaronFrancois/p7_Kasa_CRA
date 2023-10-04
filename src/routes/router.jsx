@@ -4,8 +4,7 @@ import { createBrowserRouter, Outlet } from "react-router-dom"; // Importation d
 import HomePage from "../pages/Homepage/Homepage"; // Page d'accueil
 import Footer from "../layout/Footer/Footer"; // Composant de pied de page
 import Main from "../layout/Main/Main"; // Composant principal
-import Navbar from "../components/Navbar/Navbar"; // Barre de navigation
-import ApartmentPage from "../pages/ApartmentPage/ApartmentPage"; // Page d'appartement
+import Navbar from './layout/Header/Header'; // Barre de navigation
 import About from "../pages/About/About"; // Page À propos
 import { ErrorPageNotFound } from "../pages/ErrorPageNotFound/ErrorPageNotFound"; // Page d'erreur
 
@@ -32,10 +31,7 @@ export const router = createBrowserRouter([
         path: "/",                         // Route pour la page d'accueil
         element: <HomePage />
       },
-      // {
-      //   path: "/flat",                     // Route pour la page d'appartement
-      //   element: <ApartmentPage />
-      // },
+    
       {
         path: "/about",                    // Route pour la page À propos
         element: <About />
